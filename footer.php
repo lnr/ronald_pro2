@@ -6,9 +6,9 @@
  *
  */
 ?>
-				</div> <!-- content -->
+					
 				
-				<div class="menu">
+				<div class="menu width">
 					<ul>
 						<li><a href="/history">History</a></li>
 						<li><a href="/about">About</a></li>
@@ -30,9 +30,9 @@
 		</div>
 		<script type="text/javascript">
 			(function(){
-				$(".middle-container").offset({'top': ($(window).height() - $(".content").height())/2});
+				$(".middle-container").offset({'top': ($(window).height() - $(".cont1").height())/2});
 				$(window).resize(function(){
-					$(".middle-container").offset({'top': ($(window).height() - $(".content").height())/2});
+					$(".middle-container").offset({'top': ($(window).height() - $(".cont1").height())/2});
 				});
 			})();
 		</script>

@@ -1,5 +1,3 @@
-= TWENTY ELEVEN =
+= project2 =
 
 * by the WordPress team, http://wordpress.org/
-
-== ABOUT TWENTY ELEVEN ==

@@ -12,6 +12,7 @@ html, body{
 
 .middle-container{
 	position: absolute;
+	width: 100%;
 }
 
 .width{
@@ -55,23 +56,21 @@ div.header{
 
 /*-- content block start --*/
 
-div.content{
+.cont1{
 	height: 450px;
-	/*background: url(images/grey-bg.png);*/
-	/*background: url(images/main-image.png) no-repeat;*/
-	
+}
+
+.greybg{
+	background: url(images/grey-bg.png);
+	overflow: hidden;
 }
 
 .main-slider{
-	width: 1200px;
-	height: 450px;
 	float: left;
 	margin: 0 -100px;
 }
 
 .menu{
-	width:100%;
-	/*margin-bottom: 100px;*/
 	padding-bottom:80px;
 }
 

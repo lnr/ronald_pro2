@@ -13,7 +13,8 @@
  */
 
 get_header(); ?>
-
+<div class="greybg cont1">
+	<div class="width">
 		<div id="primary">
 			<div id="content" role="main">
 
@@ -25,5 +26,6 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
-
+	</div>
+</div>
 <?php get_footer(); ?>

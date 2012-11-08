@@ -1,6 +1,6 @@
 <?php get_header();?>
-
-				<div class="main-slider"></div>
+			<div class="cont1 width">
+				<div class="main-slider "></div>
 				<script type="text/javascript">
 					var path = '<?php echo THEME_PATH; ?>images/slides/';
 					$('.main-slider').rotator({
@@ -18,5 +18,6 @@
 						]
 					});
 				</script>
+			</div>
 
 <?php get_footer(); ?>
