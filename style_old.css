@@ -1,0 +1,124 @@
+html{
+	background: #0066CB;
+}
+
+body{
+	margin: 0;
+}
+
+.width{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+div.header{
+	height: 150px;
+}
+
+.header .logo{
+	float: left;
+	height: 86px;
+	width: 254px;
+	background: url(images/logo.png) no-repeat;
+	margin: 30px 0;
+}
+
+.header .language-switcher{
+	float: right;
+	margin-right: 120px;
+}
+
+.header .language-switcher a.lang{
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	float: left;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+.header .language-switcher a.lang.active{
+	background: #333;
+}
+
+div.content{
+	height: 450px;
+	background: url(images/grey-bg.png);
+	/*background: url(images/main-image.png) no-repeat;*/
+	
+}
+
+.main-slider{
+	width: 950px;
+	height: 400px;
+	float: left;
+	margin: 25px;
+}
+
+.menu{
+	width:100%;
+	margin-bottom: 100px;
+}
+
+.menu ul{
+	list-style: none;
+	padding: 0;
+}
+
+.menu ul li{
+	float: left;
+	min-width: 195px;
+	padding: 4px 0 2px 5px;
+	height: 22px;
+}
+
+.menu ul li:nth-child(1){
+	background: url(images/m1-arr.png) right top no-repeat #A54EAC;
+}
+
+.menu ul li:nth-child(2){
+	background: url(images/m2-arr.png) right top no-repeat #FFB400;
+}
+
+.menu ul li:nth-child(3){
+	background: url(images/m3-arr.png) right top no-repeat #CD0067;
+}
+
+.menu ul li:nth-child(4){
+	background: url(images/m4-arr.png) right top no-repeat #333333;
+}
+
+.menu ul li:nth-child(5){
+	background: url(images/m5-arr.png) right top no-repeat #CDCC00;
+}
+
+.menu ul li a{
+	width: 100%;
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+
+div.footer{
+	height: 80px;
+}
+
+.footer .femto{
+	width: 147px;
+	height: 50px;
+	background: url(images/femto-logo.png) no-repeat;
+	float: right;
+	margin:25px;
+}
+
+.footer .copyright{
+	float: right;
+	border-left: white solid 1px;
+	width: 200px;
+	height: 40px;
+	font-family: Tahoma;
+	font-size: 12;
+	color: white;
+	padding: 20px;
+}
