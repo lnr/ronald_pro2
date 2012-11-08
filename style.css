@@ -1,15 +1,25 @@
-html{
+html, body{
 	background: #0066CB;
+	margin: 0;
+	height:100%;
+	position:relative;
 }
 
-body{
-	margin: 0;
+#main-container{
+	min-height:100%; /* Задаем минимальную высоту 100% */ 
+	_height:100%;
+}
+
+.middle-container{
+	position: absolute;
 }
 
 .width{
 	width: 1000px;
 	margin: 0 auto;
 }
+
+/*-- header block start --*/
 
 div.header{
 	height: 150px;
@@ -41,6 +51,10 @@ div.header{
 	background: #333;
 }
 
+/*-- header block end --*/
+
+/*-- content block start --*/
+
 div.content{
 	height: 450px;
 	/*background: url(images/grey-bg.png);*/
@@ -57,7 +71,8 @@ div.content{
 
 .menu{
 	width:100%;
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
+	padding-bottom:80px;
 }
 
 .menu ul{
@@ -100,8 +115,15 @@ div.content{
 	font-family: Tahoma;
 }
 
+
+/*-- content block end --*/
+
+/*-- footer block start --*/
+
 div.footer{
 	height: 80px;
+	margin-top:-80px;
+	position:relative;
 }
 
 .footer .femto{
@@ -122,3 +144,5 @@ div.footer{
 	color: white;
 	padding: 20px;
 }
+
+/*-- footer block end --*/

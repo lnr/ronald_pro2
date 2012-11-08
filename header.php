@@ -23,14 +23,13 @@ if (!defined(THEME_PATH))
 		<script type="text/javascript" src="<?php echo THEME_PATH; ?>js/jquery.rotator.min.js"></script>
 	</head>
 	<body>
-		<div class="header">
-			<div class="width">
+		<div id="main-container" class="width">
+			<div class="header">
 				<a class="logo" href="/"></a>
 				<div class="language-switcher">
 					<a class="lang active" href="#">Eng</a>
 					<a class="lang" href="#">Рус</a>
 				</div>
 			</div>
-		</div>
-		<div class="content">
-			<div class="width">
+			<div class="middle-container">
+			<div class="content">
