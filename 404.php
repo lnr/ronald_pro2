@@ -9,6 +9,10 @@
 
 get_header(); ?>
 
-	<div class="cont1"></div>
+	<div class="greybg cont1">
+		<div class="width">
+			404
+		</div>
+	</div>
 
 <?php get_footer(); ?>
