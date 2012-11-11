@@ -1,29 +1,30 @@
 html, body{
-	background: #0066CB;
+	background: #b8b9bb;
 	margin: 0;
 	height:100%;
-	position:relative;
+/*	position:relative;*/
 }
 
 #main-container{
-	min-height:100%; /* Задаем минимальную высоту 100% */ 
-	_height:100%;
+	/*min-height:100%; 
+	_height:100%;*/
+	background: #0066CB;
 }
 
 .middle-container{
-	position: absolute;
-	width: 100%;
+	/*position: absolute;
+	width: 100%;*/
 }
 
 .width{
-	width: 1000px;
+	width: 1100px;
 	margin: 0 auto;
 }
 
 /*-- header block start --*/
 
 div.header{
-	height: 150px;
+	height: 140px;
 }
 
 .header .logo{
@@ -31,17 +32,17 @@ div.header{
 	height: 86px;
 	width: 254px;
 	background: url(images/logo.png) no-repeat;
-	margin: 30px 0;
+	margin: 32px 70px 0;
 }
 
 .header .language-switcher{
 	float: right;
-	margin-right: 120px;
+	margin-right: 150px;
 }
 
 .header .language-switcher a.lang{
 	color: white;
-	padding: 10px;
+	padding: 7px;
 	text-decoration: none;
 	float: left;
 	font-family: Tahoma;
@@ -67,11 +68,13 @@ div.header{
 
 .main-slider{
 	float: left;
-	margin: 0 -100px;
+	/*margin: 0 -100px;*/
 }
 
 .menu{
-	padding-bottom:80px;
+	/*padding-bottom:80px;*/
+	margin: 25px auto 40px;
+	width: 1000px;
 }
 
 .menu ul{
@@ -114,15 +117,19 @@ div.header{
 	font-family: Tahoma;
 }
 
+.menu ul li a:hover, .menu ul li a.active{
+	color: #777777;
+}
+
 
 /*-- content block end --*/
 
 /*-- footer block start --*/
 
 div.footer{
-	height: 80px;
-	margin-top:-80px;
-	position:relative;
+	height: 57px;
+	/*margin-top:-80px;
+	position:relative;*/
 }
 
 .footer .femto{
@@ -130,18 +137,52 @@ div.footer{
 	height: 50px;
 	background: url(images/femto-logo.png) no-repeat;
 	float: right;
-	margin:25px;
+	margin:14px 20px;
 }
 
 .footer .copyright{
 	float: right;
-	border-left: white solid 1px;
-	width: 200px;
-	height: 40px;
+	border-left: #4d94db solid 1px;
+	width: 178px;
 	font-family: Tahoma;
-	font-size: 12;
+	font-size: 12px;
 	color: white;
-	padding: 20px;
+	padding: 14px 20px;
 }
 
 /*-- footer block end --*/
+
+
+
+
+
+#main-container {
+	position:relative;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+ 
+#main-container:before,
+#main-container:after {
+	content:"";
+	position:absolute;
+	z-index:-2;
+}
+ 
+#main-container:before {
+	top:10px;
+	bottom:10px;
+	left:0;
+	right:0;
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
+	   -moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
+	        box-shadow:0 0 15px rgba(0,0,0,0.6);
+	-moz-border-radius:10px / 100px;
+	     border-radius:10px / 100px;
+}
+ 
+#main-container p {
+	font-size:16px;
+	font-weight:bold;
+}        
