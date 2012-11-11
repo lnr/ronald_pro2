@@ -9,7 +9,7 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-
+$title = get_the_title();
 if (!defined(THEME_PATH))
 	define('THEME_PATH', '/wp-content/themes/ronald_pro2/');
 
@@ -23,7 +23,7 @@ if (!defined(THEME_PATH))
 		<script type="text/javascript" src="<?php echo THEME_PATH; ?>js/jquery.rotator.min.js"></script>
 	</head>
 	<body>
-		<div id="main-container" class="width">
+		<div id="main-container" class="width page-<?php echo $title;?>">
 			<div class="header ">
 				<a class="logo" href="/"></a>
 				<div class="language-switcher">
