@@ -74,7 +74,7 @@ div.header{
 .menu{
 	/*padding-bottom:80px;*/
 	margin: 25px auto 40px;
-	width: 1000px;
+	width: 940px;
 }
 
 .menu ul{
@@ -84,7 +84,7 @@ div.header{
 
 .menu ul li{
 	float: left;
-	min-width: 195px;
+	min-width: 182px;
 	padding: 4px 0 2px 5px;
 	height: 22px;
 }
