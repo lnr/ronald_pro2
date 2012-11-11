@@ -64,6 +64,7 @@ div.header{
 .greybg{
 	background: url(images/grey-bg.png);
 	overflow: hidden;
+	padding: 0 78px;
 }
 
 .main-slider{
@@ -73,7 +74,7 @@ div.header{
 
 .menu{
 	/*padding-bottom:80px;*/
-	margin: 25px auto 40px;
+	margin: 25px auto 62px;
 	width: 940px;
 }
 
@@ -89,23 +90,23 @@ div.header{
 	height: 22px;
 }
 
-.menu ul li:nth-child(1){
+.menu ul li.menu-history{
 	background: url(images/m1-arr.png) right top no-repeat #A54EAC;
 }
 
-.menu ul li:nth-child(2){
+.menu ul li.menu-about{
 	background: url(images/m2-arr.png) right top no-repeat #FFB400;
 }
 
-.menu ul li:nth-child(3){
+.menu ul li.menu-contact{
 	background: url(images/m3-arr.png) right top no-repeat #CD0067;
 }
 
-.menu ul li:nth-child(4){
+.menu ul li.menu-projects{
 	background: url(images/m4-arr.png) right top no-repeat #333333;
 }
 
-.menu ul li:nth-child(5){
+.menu ul li.menu-news{
 	background: url(images/m5-arr.png) right top no-repeat #CDCC00;
 }
 
@@ -121,6 +122,9 @@ div.header{
 	color: #777777;
 }
 
+.greybg .entry-header, .greybg .entry-title{
+	display:none;
+}
 
 /*-- content block end --*/
 
