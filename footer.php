@@ -5,7 +5,7 @@
  * Contains the closing of the id=main div and all content after
  *
  */
-
+$title = get_the_title();
 ?>
 				<div class="menu">
 					<ul>

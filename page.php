@@ -13,6 +13,7 @@
  */
 
 get_header(); ?>
+<script type="text/javascript" src="<?php echo THEME_PATH; ?>js/stupidSlider.js"></script>
 <div class="greybg cont1">
 	<div class="width">
 		<div id="primary">

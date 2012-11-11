@@ -65,6 +65,7 @@ div.header{
 	background: url(images/grey-bg.png);
 	overflow: hidden;
 	padding: 0 78px;
+	position: relative;
 }
 
 .main-slider{
@@ -254,3 +255,21 @@ div.footer{
 }
 
 /*--  news block end  --*/
+
+.arrows{
+	width: 21px;
+	height: 48px;
+	position: absolute;
+	cursor: pointer;
+	top: 200px;
+}
+
+.arrows.btn-left{
+	left: 34px;
+	background: url(images/arrows.png) left top;
+}
+
+.arrows.btn-right{
+	right: 34px;
+	background: url(images/arrows.png) right top;
+}

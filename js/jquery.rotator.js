@@ -101,7 +101,7 @@
     	preload: function(){
     		
     		//Индикатор загрузки
-	    	this.el.html(this.preloader.append('<img src="/wp-content/themes/pro2/images/ajax-loader.gif" width="32" alt="Загрузка..." />'));               		    	
+	    	this.el.html(this.preloader.append('<img src="/wp-content/themes/ronald-pro2/images/ajax-loader.gif" width="32" alt="Загрузка..." />'));               		    	
 	        var loaded = 0,pic = [],self = this;
             
             //Добавляем html-разметку слайдов    
