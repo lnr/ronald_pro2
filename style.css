@@ -64,8 +64,11 @@ div.header{
 .greybg{
 	background: url(images/grey-bg.png);
 	overflow: hidden;
-	padding: 0 78px;
 	position: relative;
+}
+
+.page-history .greybg{
+	padding: 0 78px;
 }
 
 .main-slider{
@@ -123,7 +126,7 @@ div.header{
 	color: #777777;
 }
 
-.greybg .entry-header, .greybg .entry-title{
+.greybg .entry-header, .greybg .entry-title, .entry-meta{
 	display:none;
 }
 
@@ -195,13 +198,13 @@ div.footer{
 
 /*--  news block start  --*/
 
-.page-news .timeline{
+.page-history .timeline{
 	height: 450px;
 	position: relative;
 	background: url(images/news-timeline.png) left center repeat-x;
 }
 
-.page-news .block1{
+.page-history .block1{
 	width: 220px;
 	position: absolute;
 	color:white;
@@ -209,47 +212,47 @@ div.footer{
 	padding-right: 100px; 
 }
 
-.page-news .block1 .news-head{
+.page-history .block1 .news-head{
 	text-decoration: underline;
 	color: #a64eab;
 	font-size: 16px;
 }
 
-.page-news .block1 .date{
+.page-history .block1 .date{
 	color: #777777;
 	margin-top: 3px; 
 }
 
-.page-news .block1 p{
+.page-history .block1 p{
 	margin: 3px 0;
 }
 
-.page-news .item1{
+.page-history .item1{
 	top: 260px;
 	left: 0;
 }
 
-.page-news .item2{
+.page-history .item2{
 	top: 100px;
 	left: 160px;
 }
 
-.page-news .item3{
+.page-history .item3{
 	top: 260px;
 	left: 320px;
 }
 
-.page-news .item4{
+.page-history .item4{
 	top: 60px;
 	left: 480px;
 }
 
-.page-news .item5{
+.page-history .item5{
 	top: 260px;
 	left: 640px;
 }
 
-.page-news .item6{
+.page-history .item6{
 	top: 100px;
 	left: 800px;
 }
@@ -272,4 +275,26 @@ div.footer{
 .arrows.btn-right{
 	right: 34px;
 	background: url(images/arrows.png) right top;
+}
+
+
+
+.slider ul{
+	position: relative;
+	list-style: none;
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slider ul li{
+	float: left;
+	margin: 0 10px;
+}
+
+.slider ul li a{
+	background:url(images/projects/slide-bg.png);
+	float: left;
+	margin: 10px 0;
+	height: 180px;
 }
