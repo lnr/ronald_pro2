@@ -5,6 +5,10 @@ html, body{
 /*	position:relative;*/
 }
 
+ul{
+	list-style: none;
+}
+
 #main-container{
 	/*min-height:100%; 
 	_height:100%;*/
@@ -83,7 +87,6 @@ div.header{
 }
 
 .menu ul{
-	list-style: none;
 	padding: 0;
 }
 
@@ -259,7 +262,9 @@ div.footer{
 
 /*--  news block end  --*/
 
-.arrows{
+/*-- projects --*/
+
+.page-projects .arrows{
 	width: 21px;
 	height: 48px;
 	position: absolute;
@@ -267,34 +272,103 @@ div.footer{
 	top: 200px;
 }
 
-.arrows.btn-left{
+.page-projects .arrows.btn-prev{
 	left: 34px;
 	background: url(images/arrows.png) left top;
 }
 
-.arrows.btn-right{
+.page-projects .arrows.btn-next{
 	right: 34px;
 	background: url(images/arrows.png) right top;
 }
 
+.page-projects .slider{
+	overflow:hidden; 
+	width: 960px; 
+	margin: 20px auto; 
+	position:relative;
+}
 
-
-.slider ul{
+.page-projects .slider ul{
 	position: relative;
-	list-style: none;
 	display: none;
 	margin: 0;
 	padding: 0;
 }
 
-.slider ul li{
+.page-projects .slider ul li{
 	float: left;
 	margin: 0 10px;
+	width: 220px;
 }
 
-.slider ul li a{
-	background:url(images/projects/slide-bg.png);
+.page-projects .slider ul li a{
+	background:#0066cc;
+	color: white;
 	float: left;
 	margin: 10px 0;
 	height: 180px;
+	width: 100%;
+}
+
+.page-projects .slider ul li a .text{
+	position:absolute;
+}
+
+.page-projects .slider ul li a img{
+	position: 
+}
+
+/*-- project details --*/
+
+.cont2{
+	margin: 30px auto;
+	width:1000px;
+}
+
+.cont2 .proj-info{
+	background:#0066cc;
+	width:860px;
+	height:390px;
+	float: left;
+}
+
+.cont2 .gallery2{
+	float: right;
+	width: 100px;
+}
+
+.cont2 .gallery2 img{
+	float: left;
+}
+
+.cont2 .proj-info .proj-img{
+	float: left;
+	width:640px;
+	height:390px;	
+}
+
+.cont2 .proj-info .proj-desc{
+	float: right;
+	width: 220px;
+}
+
+
+
+.page-details .arrows{
+	width: 29px;
+	height: 12px;
+	position: absolute;
+	cursor: pointer;
+	right: 77px;
+}
+
+.page-details .arrows.btn-prev{
+	top: 14px;
+	background: url(images/arrows-small.png) left top;
+}
+
+.page-details .arrows.btn-next{
+	bottom: 14px;
+	background: url(images/arrows-small.png) left bottom;
 }

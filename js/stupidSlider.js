@@ -3,8 +3,9 @@
 
 		var options = {
 			'loop' : false,
-			'leftBtn' : '.btn-left',
-			'rightBtn' : '.btn-right',
+			'orientation' : 'hor',
+			'prev' : '.btn-prev',
+			'next' : '.btn-next',
 			'step' : 160,
 			'speed' : 400,
 			'ready' : function(){
@@ -17,18 +18,18 @@
 		$.extend( options, inOptions );
 
 
-		var   $btnLeft = $(options.leftBtn)
-			, $btnRight = $(options.rightBtn)
-			, $this = this
+		var   $this = this
 			, limit = options.step * ($this.find('li').size() - 4)
 			, isMove = false
 			;
 
-		$(options.leftBtn + ", " + options.rightBtn).click(function(){
+		$(options.prev + ", " + options.next).click(function(){
 			if(isMove) return;
-			var offset = $(this).hasClass('btn-left') ? options.step :  -options.step;
+			var offset = $(this).hasClass(options.prev) ? options.step :  -options.step;
 			var pos = $this.position();
-			console.log(pos.left + ' ' + offset);
+
+			//console.log(pos.left + ' ' + offset);
+			
 			if(pos.left + offset > 0 || (0 - pos.left - offset) > limit ) return;
 			isMove = true;
 			$this.animate({left: (pos.left + offset)}, options.speed, function(){
