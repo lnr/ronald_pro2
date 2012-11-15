@@ -82,7 +82,7 @@ div.header{
 
 .menu{
 	/*padding-bottom:80px;*/
-	margin: 25px auto 62px;
+	margin: 25px auto 45px;
 	width: 940px;
 }
 
@@ -131,6 +131,10 @@ div.header{
 
 .greybg .entry-header, .greybg .entry-title, .entry-meta{
 	display:none;
+}
+
+.page-details .greybg .entry-header, .page-details .greybg .entry-title{
+	display: block;
 }
 
 /*-- content block end --*/
@@ -313,17 +317,40 @@ div.footer{
 
 .page-projects .slider ul li a .text{
 	position:absolute;
+	width: 200px;
+	height: 160px;
+	padding:10px;
+}
+
+.page-projects .slider ul li a .text .title{
+	font-size: 20px;
+}
+
+.page-projects .slider ul li a .text .desc{
+	position: absolute;
+	top: 68px;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+.page-projects .slider ul li a .text span{
+	position:absolute;
+	width: 120px;
+	height: 30px;
+	bottom: 0;
+	right: 0;
 }
 
 .page-projects .slider ul li a img{
-	position: 
+	position: relative;
+	z-index: 1;
 }
 
 /*-- project details --*/
 
 .cont2{
 	margin: 30px auto;
-	width:1000px;
+	width:940px;
 }
 
 .cont2 .proj-info{
@@ -331,11 +358,25 @@ div.footer{
 	width:860px;
 	height:390px;
 	float: left;
+	overflow: hidden;
+	position: relative;
 }
 
 .cont2 .gallery2{
 	float: right;
-	width: 100px;
+	width: 75px;
+	height: 390px;
+	overflow: hidden;
+	position: relative;
+}
+
+.cont2 .gallery2 a{
+	width: 55px;
+	height: 45px;
+	float: left;
+	border: solid 2px white;
+	cursor: pointer;
+	margin: 4px 10px 3px;
 }
 
 .cont2 .gallery2 img{
@@ -350,7 +391,10 @@ div.footer{
 
 .cont2 .proj-info .proj-desc{
 	float: right;
-	width: 220px;
+	width: 200px;
+	color: white;
+	padding: 0 10px;
+	font-size: 14px;
 }
 
 
@@ -360,7 +404,13 @@ div.footer{
 	height: 12px;
 	position: absolute;
 	cursor: pointer;
-	right: 77px;
+	right: 102px;
+}
+
+.page-details .gallery2 ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 .page-details .arrows.btn-prev{
@@ -371,4 +421,13 @@ div.footer{
 .page-details .arrows.btn-next{
 	bottom: 14px;
 	background: url(images/arrows-small.png) left bottom;
+}
+
+.page-details .blue-arrow{
+	right: 220px;
+	top: 20px;
+	height: 40px;
+	width: 10px;
+	position: absolute;
+	background: url(images/blue-arrow.png);	
 }

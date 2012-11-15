@@ -3,9 +3,10 @@
 
 		var options = {
 			'loop' : false,
+			'visibleElementsCount' : 4,
 			'orientation' : 'hor',
-			'prev' : '.btn-prev',
-			'next' : '.btn-next',
+			'prev' : 'btn-prev',
+			'next' : 'btn-next',
 			'step' : 160,
 			'speed' : 400,
 			'ready' : function(){
@@ -19,31 +20,32 @@
 
 
 		var   $this = this
-			, limit = options.step * ($this.find('li').size() - 4)
+			, limit = options.step * ($this.find('li').size() - options.visibleElementsCount)
 			, isMove = false
 			;
 
-		$(options.prev + ", " + options.next).click(function(){
+		$('.' + options.prev + ", ." + options.next).click(function(){
 			if(isMove) return;
-			var offset = $(this).hasClass(options.prev) ? options.step :  -options.step;
-			var pos = $this.position();
+			var   offset = $(this).hasClass(options.prev) ? options.step :  -options.step
+				, pos = $this.position()
+				, direction = (options.orientation == 'hor') ? 'left' : 'top'
+				, newPos = pos[direction] + offset
+				;
 
-			//console.log(pos.left + ' ' + offset);
-			
-			if(pos.left + offset > 0 || (0 - pos.left - offset) > limit ) return;
 			isMove = true;
-			$this.animate({left: (pos.left + offset)}, options.speed, function(){
+
+			if(pos[direction] + offset > 0 || (0 - pos[direction] - offset) > limit ) { 
+				isMove = false; 
+				return; 
+			}
+			
+			var cssObj = (options.orientation == 'hor') ? {'left' : newPos} : {'top' : newPos};
+
+			$this.animate(cssObj, options.speed, function(){
 				isMove = false;
 			});
+			
 		});
-
-		$this.find('img')
-			.mouseover(function(){
-				$(this).animate({'opacity' : 0}, options.speed);
-			})
-			.mouseout(function(){
-				$(this).animate({'opacity' : 1}, options.speed);
-			});
 
 		options.ready();
 

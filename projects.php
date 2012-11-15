@@ -7,7 +7,7 @@
 <?php get_header();?>
 <?php
 
-$projects = get_posts('category=3&numberposts=5'); 
+$projects = get_posts('category=3&numberposts=12'); 
 $i = 1;
 $out = '';
 foreach ($projects as $project) {
@@ -37,14 +37,22 @@ foreach ($projects as $project) {
 
 	<script type="text/javascript">
 		(function($){
-			$('.slider ul').stupidSlider({
-				'step' : 240,
-				'ready' : function(){
-					$('.slider ul')
-						.width(10000)
-						.fadeIn();
-				}
-			});
+			$('.slider ul')
+				.stupidSlider({
+					'step' : 240,
+					'ready' : function(){
+						$('.slider ul')
+							.width(10000)
+							.fadeIn();
+					}
+				})
+			$('.slider ul img')
+				.mouseover(function(){
+					$(this).animate({'opacity' : 0}, 240);
+				})
+				.mouseout(function(){
+					$(this).animate({'opacity' : 1}, 240);
+				});
 		})( jQuery );
 	</script>
 </div>

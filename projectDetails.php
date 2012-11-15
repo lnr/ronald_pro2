@@ -8,10 +8,10 @@
 
 <?php
 
-$projects = get_posts('category=3&numberposts=5'); 
+$projects = get_posts('category=3&numberposts=12'); 
 $out = '';
 foreach ($projects as $project) {
-	$out .= '<li><a style="cursor:pointer" data-href="' . $project->post_name . '"><img src="/wp-content/themes/ronald_pro2/images/projects/'. $project->post_name .'-small.jpg" /></a></li>';
+	$out .= '<li><a data-href="' . $project->post_name . '"><img src="/wp-content/themes/ronald_pro2/images/projects/'. $project->post_name .'-small.jpg" /></a></li>';
 }
 ?>
 
@@ -22,6 +22,7 @@ foreach ($projects as $project) {
 		<div class="proj-info">
 			<div class="proj-img"></div>
 			<div class="proj-desc"></div>
+			<div class="blue-arrow"></div>
 		</div>
 		<div class="gallery2">
 			<ul>
@@ -35,7 +36,17 @@ foreach ($projects as $project) {
 
 <script type="text/javascript">
 	(function($){
-
+		$('.gallery2 ul')
+			.stupidSlider({
+				'visibleElementsCount' : 7,
+				'step' : 56,
+				'orientation' : 'ver',
+				'ready' : function(){
+					$('.slider ul')
+						//.width(10000)
+						.fadeIn();
+				}
+			})
 
 		var getPage = function(url, container){
 			window.location.hash = url;
