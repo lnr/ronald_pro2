@@ -11,11 +11,9 @@
 $projects = get_posts('category=3&numberposts=12'); 
 $out = '';
 foreach ($projects as $project) {
-	$out .= '<li><a data-href="' . $project->post_name . '"><img src="/wp-content/themes/ronald_pro2/images/projects/'. $project->post_name .'-small.jpg" /></a></li>';
+	$out .= '<li><a class="link-' . $project->post_name . '" data-href="' . $project->post_name . '"><img src="/wp-content/themes/ronald_pro2/images/projects/'. $project->post_name .'-small.jpg" /></a></li>';
 }
 ?>
-
-
 
 <div class="greybg cont1">
 	<div class="cont2">
@@ -53,7 +51,7 @@ foreach ($projects as $project) {
 			$('.proj-img').html('<img src="/wp-content/themes/ronald_pro2/images/projects/'+ url +'-big.jpg" />');
 			container.empty();
 			$.ajax({
-				url: '/' + url,
+				url: '/lang/<?=LANG?>/' + url,
 				success:function(data){
 					container.html(data);
 				}/*,
@@ -64,10 +62,13 @@ foreach ($projects as $project) {
 		}
 		var url = window.location.hash.replace('#', '');
 		if(url) {
+			$('.link-' + url).addClass('active');
 			getPage(url, $('.proj-desc'));
 		}
 		$('.gallery2 a').click(function(){
 			getPage($(this).data('href'), $('.proj-desc'));
+			$('.gallery2 a.active').removeClass('active');
+			$(this).addClass('active');
 		});
 	})(jQuery)
 </script>

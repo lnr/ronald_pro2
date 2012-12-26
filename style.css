@@ -39,6 +39,10 @@ div.header{
 	margin: 32px 70px 0;
 }
 
+.language{
+	display: none;
+}
+
 .header .language-switcher{
 	float: right;
 	margin-right: 150px;
@@ -320,6 +324,7 @@ div.footer{
 	width: 200px;
 	height: 160px;
 	padding:10px;
+	font-size: 13px;
 }
 
 .page-projects .slider ul li a .text .title{
@@ -329,16 +334,17 @@ div.footer{
 .page-projects .slider ul li a .text .desc{
 	position: absolute;
 	top: 68px;
-	font-size: 14px;
 	padding-right: 10px;
 }
 
 .page-projects .slider ul li a .text span{
+	background: url(images/read-more.png) no-repeat top right;	
 	position:absolute;
-	width: 120px;
-	height: 30px;
-	bottom: 0;
-	right: 0;
+	padding: 5px 0;
+	width: 88px;
+	height: 28px;
+	bottom: 0px;
+	right: 10px;
 }
 
 .page-projects .slider ul li a img{
@@ -377,6 +383,11 @@ div.footer{
 	border: solid 2px white;
 	cursor: pointer;
 	margin: 4px 10px 3px;
+	opacity: 0.5;
+}
+
+.cont2 .gallery2 a:hover, .cont2 .gallery2 a.active{
+	opacity: 1;
 }
 
 .cont2 .gallery2 img{
@@ -397,7 +408,9 @@ div.footer{
 	font-size: 14px;
 }
 
-
+.cont2 .proj-info .proj-desc .entry-title{
+	font-size: 21px;
+}
 
 .page-details .arrows{
 	width: 29px;

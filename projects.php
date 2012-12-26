@@ -15,7 +15,7 @@ foreach ($projects as $project) {
 
 	if($i & 1)
 		$out .= '<li>';
-	$out .= '<a href="/projects/details#' . $project->post_name . '"><div class="text"><div class="title">' . $project->post_title 
+	$out .= '<a href="/lang/'.LANG.'/projects/details#' . $project->post_name . '"><div class="text"><div class="title">' . $project->post_title 
 		. '</div><div class="desc">' . $project->post_excerpt . '</div><span>READ MORE</span></div>';
 	$out .= '<img src="/wp-content/themes/ronald_pro2/images/projects/'. $project->post_name .'.jpg" />';
 	$out .= '</a>';
